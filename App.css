@@ -1,0 +1,139 @@
+* {
+  /* font-family: Segoe UI; */
+  font-family: Inter,sans-serif;
+}
+body {
+  margin: 0;
+  padding: 50px 10px;
+  background-color:rgb(85, 157, 175);
+  /* background-color:rgb(4, 164, 222); */
+  width: auto;
+}
+.Menu .tab .Big{
+  font-size: 125px;
+}
+
+.Menu{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.Menu input[type="radio"]{
+  display: none;
+}
+
+.Menu label{
+  overflow-x: auto;
+  padding: 15px 25px;
+  border-radius: 0px 0px 0px 0px;
+  background:rgb(255, 255, 255);
+  cursor: pointer;
+  /* width: 25%; */
+}
+
+.Menu .tab{
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  max-width: fit-content;
+  order: 1; 
+  /* order is position of [] -> 0 1 2 st nd rd */
+  display: none;
+  
+}
+
+.Menu input[type="radio"]:checked + label + .tab{
+  display: block;
+}
+
+.Menu input[type="radio"]:checked + label{
+  background:#ffffff;
+  color: hsl(196, 100%, 37%);
+  border-bottom: 3px solid #008abc!important;
+  
+}
+.Menu label:hover{
+  color: #57c9f3;
+  border-bottom: 2px solid #57c9f3!important;
+  
+}
+.tab{
+  box-shadow: 0 0.5rem 0.8rem 
+}
+.show{
+  /* background-color:rgb(196, 239, 245); */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding:  0px 0px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+/* .data{
+  background-color:cornflowerblue;
+} */
+@import '~antd/dist/antd.css';
+.Tree__scrollbar{
+  overflow-y: auto;
+  max-height: 600px;
+  min-height: 600px;
+  min-width: 400px;
+}
+.TreeMenu :hover {
+  cursor: pointer;
+}
+/* .grid2{
+  background-color:white;
+  padding: 20px;
+} */
+
+.csv__show h1{
+  font-size: 50px;
+}
+.dcm__tree{
+  display: flex;
+}
+.summary_tree{
+  padding-right: 100px;
+  display:grid;
+  grid-template-columns:  1fr 1fr; 
+}
+.dcm__image{
+  padding-left: 50px;
+}
+.dataexplorer{
+  order: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  /* order is position of [] -> 0 1 2 st nd rd */
+}
+.dataexplorer label{
+  padding: 15px 30px;
+  border-radius: 0px;
+  background-color:lightblue;
+  cursor: pointer;
+}
+
+.but h1{
+  font-size: 80px;
+}
+.b__graphpadding{
+  /* size:30%; */
+  height:auto;
+  width:auto;
+}
+
+.b__graphpadding h2{
+  color:rgb(4, 164, 222);
+}
+.blue{
+  color:#008abc;
+  display:inline;
+}
+.red{
+  color:#da5957;
+  display:inline;
+}
+.gray{
+  color:#999999;
+  display:inline;
+}
